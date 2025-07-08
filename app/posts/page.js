@@ -1,10 +1,11 @@
-export const metadata = {
-  title: "All Posts",
-  description: "Browse all blog posts",
-};
+import AllPosts from "@/components/posts/all-posts";
+import { getAllPosts } from "@/lib/posts-util";
 
-export default function AllPostsPage() {
+export default async function AllPostsPage() {
+  const allPosts = await getAllPosts();
   return (
-    <h1>All Posts</h1> // 📜 Placeholder content
+    <>
+      <AllPosts posts={allPosts} />
+    </>
   );
 }
