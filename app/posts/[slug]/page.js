@@ -9,14 +9,12 @@ export async function generateStaticParams() {
 export const revalidate = 600; // ISR: rebuild every 10 min
 
 export default async function PostDetailPage({ params }) {
-  // ⬇️ params is a Promise in Next 15
   const { slug } = await params;
   const postData = getPostData(slug);
 
   return <PostContent post={postData} />;
 }
 
-// (optional) page-level <head> metadata
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const { title, excerpt } = getPostData(slug);

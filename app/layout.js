@@ -7,6 +7,7 @@ export const metadata = {
     default: "Max's Next Blog",
   },
   description: "A blog about web development by Max",
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({ children }) {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <MainNavigation />
         {children}
+        <div id="notifications"></div>
       </body>
     </html>
   );
