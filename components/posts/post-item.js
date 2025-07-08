@@ -12,8 +12,7 @@ export default function PostItem(props) {
     month: "long",
     year: "numeric",
   });
-  // const imagePath = `/images/posts/${slug}/${image}`;
-  const imagePath = `/images/posts/${image}`;
+  const imagePath = `/images/posts/${slug}/${image}`;
 
   const linkPath = `/posts/${slug}`;
 
