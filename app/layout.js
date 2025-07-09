@@ -3,10 +3,10 @@ import "./globals.css";
 
 export const metadata = {
   title: {
-    template: "%s | Max's Next Blog",
-    default: "Max's Next Blog",
+    template: "%s | Next Blog",
+    default: "Next Blog",
   },
-  description: "A blog about web development by Max",
+  description: "A blog about next.js and web development.",
   viewport: "width=device-width, initial-scale=1",
 };
 
